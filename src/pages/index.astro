@@ -1,0 +1,14 @@
+---
+import { Area } from '../lib/enums/Area';
+import { Theme } from '../lib/enums/Theme';
+
+import Layout from '../layouts/Layout.astro';
+
+import Stack from '../components/Stack.svelte';
+---
+
+<Layout title='Welcome to Astro.'>
+  <main>
+    <Stack theme={Theme.Light} area={Area.LABS} />
+  </main>
+</Layout>
